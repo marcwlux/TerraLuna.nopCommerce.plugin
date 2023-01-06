@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "TerraLuna",
+  "SystemName": "Payments.TerraLuna",
+  "Version": "2.00",
+  "SupportedVersions": [ "4.60" ],
+  "Author": "marc wagener",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.TerraLuna.dll",
+  "Description": "This plugin enables TerraLuna payments"
+}
