@@ -285,7 +285,7 @@ namespace Nop.Plugin.Payments.TerraLuna
         /// </summary>
         public override string GetConfigurationPageUrl()
         {
-            return $"{_webHelper.GetStoreLocation()}Admin/WMCryptoBitcoin/Configure";
+            return $"{_webHelper.GetStoreLocation()}Admin/TerraLuna/Configure";
         }
 
         /// <summary>
@@ -339,7 +339,7 @@ namespace Nop.Plugin.Payments.TerraLuna
             await _settingService.DeleteSettingAsync<TerraLunaPaymentSettings>();
 
             //locales
-            await _localizationService.DeleteLocaleResourcesAsync("Plugins.Payments.WMCryptoBitcoin");
+            await _localizationService.DeleteLocaleResourcesAsync("Plugins.Payments.TerraLuna");
 
             await base.UninstallAsync();
         }
@@ -354,7 +354,7 @@ namespace Nop.Plugin.Payments.TerraLuna
         /// <returns>A task that represents the asynchronous operation</returns>
         public async Task<string> GetPaymentMethodDescriptionAsync()
         {
-            return await _localizationService.GetResourceAsync("Plugins.Payments.WMCryptoBitcoin.PaymentMethodDescription");
+            return await _localizationService.GetResourceAsync("Plugins.Payments.TerraLuna.PaymentMethodDescription");
         }
 
         public Task ManageSiteMapAsync(SiteMapNode rootNode)

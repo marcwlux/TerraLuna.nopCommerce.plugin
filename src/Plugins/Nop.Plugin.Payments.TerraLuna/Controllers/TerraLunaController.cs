@@ -125,7 +125,7 @@ namespace Nop.Plugin.Payments.TerraLuna.Controllers
             var model = new ConfigurationModel
             {
             };
-            return View("~/Plugins/Payments.WMCryptoBitcoin/Views/Balance.cshtml", model);
+            return View("~/Plugins/Payments.TerraLuna/Views/Balance.cshtml", model);
 
         }
         #endregion
